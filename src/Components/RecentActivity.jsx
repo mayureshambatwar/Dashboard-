@@ -1,3 +1,5 @@
+// json-server --watch --port 4000 ./api/info.json
+
 import React, { useEffect, useState } from 'react';
 import CardFliter from './CardFliter';
 import RecentActivityItem from './RecentActivityItem';
