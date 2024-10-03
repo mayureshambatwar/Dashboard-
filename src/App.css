@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  scroll-behavior: smooth;
+  --primary:#4154f1;
+  --secondary:#717ff5;
+  --bgColor:#f6f9ff; 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body{
+  font-family: 'Roboto', sans-serif;
+  background: var(--bgColor);
+  color:#444444;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover{
+  color: var(--secondary);
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Nunito', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropdown-menu{
+  border-radius: 4px;
+  padding: 10px 0;
+  -webkit-animation-name: dropdown-animate;
+  animation-name: dropdown-animate;
+  -webkit-animation-direction: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode:both ;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgba(83, 63, 105, 0.2);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.dropdown-menu .dropdown-header,
+.dropdown-header .dropdown-footer{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 15px;
+  padding: 10px 25px;
+}
+.dropdown-header .dropdown-footer a{
+  color: #444444;
+  text-decoration: none;
+}
+.dropdown-header .dropdown-footer a:hover{
+  text-decoration: none;
+}
+.dropdown-menu .dropdown-divider{
+  color: #717ff5;
+  margin: 0;
+}
+.dropdown-menu .dropdown-item{
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+.dropdown-menu .dropdown-item i{
+  margin-right: 10px;
+  font-style: 18px;
+
+}
+.dropdown-menu.dropdown-item:hover{
+  background-color: #f6f9ff;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width:768px) {
+  .dropdown-menu-arrow::after{
+    content: '';
+    width: 13px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    transform: rotate(45deg);
+    border-top:1px solid #eaedf1 ;
+    border-left:1px solid #eaedf1 ;
+  }
 }
+ @-webkit-keyframes dropdown-animate {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  0%{
+    opacity: 0;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ }
+ @keyframes dropdown-animate {
+  0%{
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    opacity: 1;
   }
-}
+  0%{
+    opacity: 0;
+  }
+
+ }

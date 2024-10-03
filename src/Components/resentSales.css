@@ -1,0 +1,16 @@
+.recent-sales{
+    font-style: 14px;
+
+}
+.recent-sales .table thead{
+    background: #f6f6fe !important;
+}
+.recent-sales .table thead th{
+    border: 0;
+}
+.recent-sales .dataTable-top{
+    padding: 0 0 10px 0;
+}
+.recent-sales .dataTable-bottom{
+    padding: 10px 0 0 0;
+}

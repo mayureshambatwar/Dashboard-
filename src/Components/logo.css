@@ -1,0 +1,26 @@
+
+.logo {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.logo:hover {
+    text-decoration: none; 
+}
+
+@media (min-width: 1200px) {
+    .logo{
+        width: 280px;
+
+    }
+    .logo img{
+        max-width: 26px;
+        margin-left: 6px;
+    }
+    .logo span{
+        font-size: 26px;
+        font-size: 700;
+        color: #012970;
+        font-family: 'Nunito', sans-serif;
+    }
+}

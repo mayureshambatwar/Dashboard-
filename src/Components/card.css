@@ -1,0 +1,31 @@
+.dashboard .info-card{
+    padding-bottom: 10px;
+}
+h6{
+    font-style: 28px;
+    color:#012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+.card-icon{
+    font-style: 32px;
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.card-icon{
+    color: #4154f1;
+    background: #f6f6fe;
+
+}
+.dashboard .revenue-card{
+    color: #ff771d;
+    background: #ffecdf;
+}
+.dashboard .customers-card .card-icon{
+    color: #ff771d;
+    background: #ffecdf;
+}

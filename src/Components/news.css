@@ -1,0 +1,28 @@
+.news .post-item + .post-item{
+    margin-top: 15px;
+}
+.news img{
+    width: 80px;
+    float: left;
+    border-radius: 10px;
+}
+.news h4{
+    font-style: 14px;
+    margin-left: 95px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.news h4 a{
+    text-decoration: none;
+    color: #012970;
+    transition: 0.3s;
+}
+.news h4 a:hover{
+    color: #4154f1;
+}
+.news p{
+    font-style: 14px;
+    color: #777777;
+    margin-left: 95px;
+}

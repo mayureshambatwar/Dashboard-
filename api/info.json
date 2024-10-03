@@ -1,0 +1,191 @@
+{
+    "cards":[
+        {
+            "id":1,
+            "name":"Sales",
+            "icon":"bi bi-cart",
+            "amount":145,
+            "percentage":0.12,
+            "active": true
+        },
+        {
+            "id":2,
+            "name":"Revenue",
+            "icon":"bi bi-currency-dollar",
+            "amount":3246,
+            "percentage":0.08,
+            "active": false
+        },
+        {
+            "id":3,
+            "name":"Customers",
+            "icon":"bi bi-people",
+            "amount":1244,
+            "percentage":-0.11,
+            "active": false
+        }
+        
+    ],
+    "news":[
+        {
+            "id":1,
+            "img":"../assets/items/news-1.jpg",
+            "title":"Nihil blandities at in nihil autem",
+            "subtitle":"Sit recusandae non aspernatur laboriosam.",
+            "category":"abc"
+        },
+        {
+            "id":2,
+            "img":"../assets/items/news-2.jpg",
+            "title":"Quidem autem et impedit",
+            "subtitle":"Illo nemo neque maiores vitae officis cum eum turous elan dries weron.",
+            "category":"abc"
+        },
+        {
+            "id":3,
+            "img":"../assets/items/news-3.jpg",
+            "title":"Id quia et et ut maxime similique occaecati ut",
+            "subtitle":"Fuqiat voluptes vero eaque accusantium eos.",
+            "category":"abc"
+        },
+        {
+            "id":4,
+            "img":"../assets/items/news-4.jpg",
+            "title":"Laborum corporis quo dara net para",
+            "subtitle":"Qui enim quai optio.",
+            "category":"abc"
+        },
+        {
+            "id":5,
+            "img":"../assets/items/news-5.jpg",
+            "title":"Et dolores corrupti quea illo quod dolor",
+            "subtitle":"Odit ut evenit modi reiciendies.",
+            "category":"abc"
+        }
+    ],
+    "topselling":[
+        {
+            "id":1,
+            "preview":"../assets/items/product-1.jpg",
+            "name":"Ut invernet ipsa voluptas mulla",
+            "price":64,
+            "sold": 124
+        },
+        {
+            "id":2,
+            "preview":"../assets/items/product-2.jpg",
+            "name":"Exercitationem similique doloremque",
+            "price":46,
+            "sold": 98
+        },
+        {
+            "id":3,
+            "preview":"../assets/items/product-3.jpg",
+            "name":"Doloribus nisi exercitationem",
+            "price":59,
+            "sold": 74
+        },
+        {
+            "id":4,
+            "preview":"../assets/items/product-4.jpg",
+            "name":"Officiis quaerat sint rerum error",
+            "price":32,
+            "sold": 63
+        },
+        {
+            "id":5,
+            "preview":"../assets/items/product-5.jpg",
+            "name":"SIt unde debitis delectus repelendus",
+            "price":79,
+            "sold": 41
+        }
+       
+    ],
+    "recentsales":[
+        {
+            "id":1,
+            "number":"#2147",
+            "customer":"Brandon Jacob",
+            "product":"At praesentium minu",
+            "price":64,
+            "status": "Approved"
+        },
+        {
+            "id":1,
+            "number":"#2457",
+            "customer":"Brandon Jacob",
+            "product":"At praesentium minu",
+            "price":64,
+            "status": "Approved"
+        },
+        {
+            "id":2,
+            "number":"#2147",
+            "customer":"Bridie Kessler",
+            "product":"Blanditiis dolor omnis similique",
+            "price":47,
+            "status": "Pending"
+        },
+        {
+            "id":3,
+            "number":"#2049",
+            "customer":"Ashleigh Langosh",
+            "product":"At recusandae consectetur",
+            "price":147,
+            "status": "Approved"
+        },
+        {
+            "id":4,
+            "number":"#2644",
+            "customer":"Angus Grady",
+            "product":"Ut voluptation id earum et",
+            "price":67,
+            "status": "Rejected"
+        },
+        {
+            "id":5,
+            "number":"#3592",
+            "customer":"Raheem Lehner",
+            "product":"Sunt similique distinctio",
+            "price":135,
+            "status": "Approved"
+        }
+    ],
+    "recentactivity":[
+        {
+            "id":1,
+            "time":"32 min",
+            "color":"text-success",
+            "content":"Quia quae rerum explicabo officiis beatea",
+            "highlight":"explicabo officiis"
+        },
+        {
+            "id":2,
+            "time":"56 min",
+            "color":"text-danger",
+            "content":"Voluptaten blanditis eveniet",
+            "highlight":"officiis"
+        },
+        {
+            "id":3,
+            "time":"2 hrs",
+            "color":"text-primary",
+            "content":"Voluptates corrupti molestias voluptatem",
+            "highlight":"explicabo"
+        },
+        {
+            "id":4,
+            "time":"1 day",
+            "color":"text-info",
+            "content":"Tempore autem saepe occaecti voluptatem tempore",
+            "highlight":"occaecati voluptatem"
+        },
+        {
+            "id":1,
+            "time":"4 weeks",
+            "color":"text-muted",
+            "content":"Dict dolorem harum nulla eius Ut quidem sit quas",
+            "highlight":""
+        }
+    ]
+}
