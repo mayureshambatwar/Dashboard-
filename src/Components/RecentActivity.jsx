@@ -1,31 +1,16 @@
-// json-server --watch --port 4000 ./api/info.json
-
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import CardFliter from './CardFliter';
 import RecentActivityItem from './RecentActivityItem';
-import './recentActivity.css'
-
+import './recentActivity.css';
+import resentData from '../api/info.json'; // Import JSON data
 
 function RecentActivity() {
-  const [items, setItems] = useState([]);
   const [filter, setFilter] = useState("Today");
+  const items = resentData.recentactivity; // Use data directly from JSON
 
   const handleFilterChange = (filter) => {
     setFilter(filter);
   };
-
-  const fetchData = () => {
-    fetch("http://localhost:4000/recentactivity") 
-      .then((res) => res.json()) 
-      .then((data) => {
-        setItems(data);
-      })
-      .catch(e => console.log(e.message));  
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   return (
     <div className="card mt-3">
@@ -36,8 +21,8 @@ function RecentActivity() {
         </h6>
         <div className="activity">
           {items && items.length > 0 ? (
-            items.map(item => (
-              <RecentActivityItem key={item.id} item={item} /> // Added return with parentheses in map
+            items.map((item) => (
+              <RecentActivityItem key={item.id} item={item} />
             ))
           ) : (
             <p>No recent activity available.</p>

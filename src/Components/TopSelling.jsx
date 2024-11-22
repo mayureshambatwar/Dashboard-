@@ -1,28 +1,20 @@
-// json-server --watch --port 4000 ./api/info.json
 
 import React, { useEffect, useState } from "react";
 import CardFliter from "./CardFliter";
 import TopSellingItem from "./TopSellingItem";
 import './topSelling.css'
+import topSellingData from '../api/info.json'
 
 function TopSelling() {
-  const [items, setItems] = useState([]);
   const [filter, setFilter] = useState("Today");
+
+  const items = topSellingData.topselling;
   const handleFilterChange = (filter) => {
     setFilter(filter);
   };
-  const fetchData = () => {
-    fetch("http://localhost:4000/topselling")
-      .then((res) => res.json())
-      .then((data) => {
-        setItems(data);
-      })
-      .catch((e) => console.log(e.message));
-  };
+  
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  
   return (
     <div className="card top-selling overflow-auto mt-3">
       <CardFliter filterChange={handleFilterChange} />
